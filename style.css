@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
+
+.topo {
+  background: linear-gradient(135deg, #020817, #062b52, #000);
+  color: white;
+  padding: 25px 8% 70px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.links a:hover {
+  color: #d4af37;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.subtitulo {
+  color: #d4af37;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.texto-banner h1 {
+  font-size: 80px;
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.texto-banner h2 {
+  color: #d4af37;
+  margin: 15px 0;
+  font-size: 28px;
+}
+
+.texto-banner p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.botoes {
+  margin-top: 28px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 6px;
+}
+
+.dourado {
+  background: #d4af37;
+  color: #020817;
+}
+
+.dourado:hover {
+  background: white;
+}
+
+.contorno {
+  border: 2px solid #d4af37;
+  color: white;
+}
+
+.contorno:hover {
+  background: #d4af37;
+  color: #020817;
+}
+
+.foto-banner,
+.capa-musica {
+  background: linear-gradient(135deg, #ffffff, #dce7f3);
+  color: #062b52;
+  min-height: 360px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.secao {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+.secao h2 {
+  font-size: 40px;
+  color: #062b52;
+  margin-bottom: 15px;
+}
+
+.descricao {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-top: 5px solid #d4af37;
+}
+
+.card h3 {
+  color: #062b52;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.escura {
+  background: linear-gradient(135deg, #020817, #062b52);
+  color: white;
+}
+
+.escura h2 {
+  color: #d4af37;
+}
+
+.escura .card {
+  background: #071527;
+  color: white;
+  border: 1px solid #d4af37;
+}
+
+.escura .card h3 {
+  color: #d4af37;
+}
+
+.musica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+  text-align: left;
+  background: white;
+}
+
+.rodape {
+  background: #020817;
+  color: white;
+  text-align: center;
+  padding: 45px 8%;
+}
+
+.rodape h2 {
+  color: #d4af37;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+  .menu {
+    display: block;
+    text-align: center;
+  }
+
+  .links {
+    margin-top: 20px;
+  }
+
+  .links a {
+    display: block;
+    margin: 12px 0;
+  }
+
+  .banner,
+  .cards,
+  .musica {
+    grid-template-columns: 1fr;
+  }
+
+  .texto-banner h1 {
+    font-size: 50px;
+  }
+
+  .secao h2 {
+    font-size: 32px;
+  }
+}
