@@ -9,22 +9,15 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:
-Arial,
-Helvetica,
-sans-serif;
-
+font-family:Arial,Helvetica,sans-serif;
 background:#f7f8fa;
-
 color:#111827;
-
 line-height:1.7;
 }
 
 /* TOPO */
 
 .topo{
-
 background:
 linear-gradient(
 135deg,
@@ -47,8 +40,7 @@ padding:
 
 display:flex;
 
-justify-content:
-space-between;
+justify-content:space-between;
 
 align-items:center;
 
@@ -85,6 +77,8 @@ color:white;
 
 font-weight:700;
 
+padding:6px 0;
+
 transition:.3s;
 }
 
@@ -93,7 +87,7 @@ transition:.3s;
 color:#d4af37;
 }
 
-/* BANNER */
+/* HERO */
 
 .banner{
 
@@ -110,24 +104,13 @@ align-items:center;
 min-height:75vh;
 }
 
-.subtitulo{
-
-color:#d4af37;
-
-font-weight:700;
-
-font-size:18px;
-
-margin-bottom:18px;
-}
-
 .texto-banner h1{
 
 font-size:82px;
 
 line-height:1;
 
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .texto-banner h2{
@@ -175,7 +158,7 @@ border:
 4px solid
 #d4af37;
 
-display:block;
+background:white;
 
 box-shadow:
 0 25px 60px
@@ -213,6 +196,8 @@ font-weight:800;
 text-decoration:none;
 
 transition:.3s;
+
+display:inline-block;
 }
 
 .dourado{
@@ -353,6 +338,29 @@ color:#06284a;
 color:#555;
 }
 
+/* CARDS LINK */
+
+.card-link{
+
+display:block;
+
+text-decoration:none;
+
+color:inherit;
+
+cursor:pointer;
+}
+
+.card-link:hover{
+
+background:#fffaf0;
+}
+
+.card-link h3{
+
+color:#06284a;
+}
+
 /* ÁREA ESCURA */
 
 .escura{
@@ -387,11 +395,11 @@ rgba(
 0.06
 );
 
-color:white;
-
 border:
 1px solid
 #d4af37;
+
+color:white;
 }
 
 .escura .card h3{
@@ -404,11 +412,27 @@ color:#d4af37;
 color:#efefef;
 }
 
+.escura .card-link:hover{
+
+background:
+rgba(
+212,
+175,
+55,
+0.08
+);
+}
+
 /* CONTATO */
 
 .contato{
 
 background:white;
+}
+
+.contato .botoes{
+
+justify-content:center;
 }
 
 /* RODAPÉ */
@@ -442,9 +466,28 @@ color:#d9d9d9;
 margin-bottom:10px;
 }
 
+.desenvolvido{
+
+margin-top:25px;
+}
+
+.desenvolvido a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-weight:700;
+}
+
+.desenvolvido a:hover{
+
+text-decoration:underline;
+}
+
 .copyright{
 
-margin-top:30px;
+margin-top:25px;
 
 opacity:.7;
 }
@@ -465,18 +508,12 @@ gap:22px;
 justify-content:center;
 }
 
-.banner{
-
-grid-template-columns:
-1fr;
-
-text-align:center;
-}
-
+.banner,
 .cards{
 
-grid-template-columns:
-1fr;
+grid-template-columns:1fr;
+
+text-align:center;
 }
 
 .texto-banner h1{
@@ -505,6 +542,7 @@ max-width:360px;
 
 height:500px;
 }
+
 }
 
 @media(max-width:600px){
@@ -557,4 +595,5 @@ width:100%;
 
 height:auto;
 }
+
 }
