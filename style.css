@@ -29,267 +29,421 @@ max-width:100%;
 display:block;
 }
 
-/* MENU */
-
-.menu{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:25px;
-flex-wrap:wrap;
-padding:26px 8%;
-}
-
-.menu.interno{
-background:#020817;
-}
-
-.logo{
-font-size:32px;
-font-weight:900;
-letter-spacing:2px;
-color:#d4af37;
-}
-
-.links{
-display:flex;
-gap:24px;
-flex-wrap:wrap;
-}
-
-.links a{
-color:white;
-font-weight:700;
-font-size:15px;
-transition:.3s;
-}
-
-.links a:hover{
-color:#d4af37;
-}
-
 /* HOME */
 
 .home{
+
 min-height:100vh;
-background:linear-gradient(135deg,#020817,#06284a,#0d4170);
+
+background:
+linear-gradient(
+135deg,
+#020817,
+#06284a,
+#0d4170
+);
+
 color:white;
+
 }
 
-.hero{
-display:grid;
-grid-template-columns:1.1fr .9fr;
-gap:60px;
+/* MENU */
+
+.menu{
+
+display:flex;
+
+justify-content:space-between;
+
 align-items:center;
-padding:60px 8% 95px;
+
+padding:
+28px
+8%;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.menu.interno{
+
+background:#020817;
+
+}
+
+.logo{
+
+font-size:34px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+color:#d4af37;
+
+}
+
+.links{
+
+display:flex;
+
+gap:28px;
+
+flex-wrap:wrap;
+
+}
+
+.links a{
+
+color:white;
+
+font-size:15px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.links a:hover{
+
+color:#d4af37;
+
+}
+
+/* HERO */
+
+.hero{
+
+display:grid;
+
+grid-template-columns:
+1.1fr
+0.9fr;
+
+gap:70px;
+
+align-items:center;
+
+padding:
+70px
+8%
+100px;
+
 }
 
 .tag{
+
 font-size:14px;
+
 font-weight:900;
-letter-spacing:1.6px;
+
+letter-spacing:2px;
+
 text-transform:uppercase;
+
 color:#d4af37;
+
 margin-bottom:18px;
+
 }
 
-.hero h1,
-.pagina h1{
-font-size:70px;
+.hero h1{
+
+font-size:82px;
+
 line-height:1;
-margin-bottom:18px;
+
+margin-bottom:12px;
+
 }
 
 .cargo{
-font-size:25px;
-font-weight:800;
+
+font-size:28px;
+
+font-weight:700;
+
 color:#d4af37;
+
 margin-bottom:24px;
+
 }
 
 .frase{
-font-size:20px;
+
+font-size:22px;
+
 max-width:650px;
+
 color:#f2f2f2;
+
 }
 
+.cta{
+
+margin-top:35px;
+
+font-size:16px;
+
+opacity:.85;
+
+font-style:italic;
+
+}
+
+/* FOTO */
+
 .hero-foto{
+
 display:flex;
+
 justify-content:center;
+
 }
 
 .hero-foto img{
+
 width:100%;
-max-width:390px;
-height:540px;
+
+max-width:420px;
+
+height:580px;
+
 object-fit:cover;
+
 object-position:center top;
-border-radius:30px;
-border:4px solid #d4af37;
-box-shadow:0 25px 60px rgba(0,0,0,.35);
-}
 
-/* ATALHOS */
+border-radius:32px;
 
-.atalhos{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
-padding:55px 8%;
-max-width:1100px;
-margin:0 auto;
-}
+border:
+4px solid
+#d4af37;
 
-.atalhos a{
-background:white;
-padding:30px;
-border-radius:18px;
-text-align:center;
-font-size:20px;
-font-weight:800;
-color:#06284a;
-border:1px solid #ececec;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
-transition:.3s;
-}
+box-shadow:
+0 30px 60px
+rgba(0,0,0,.35);
 
-.atalhos a:hover,
-.atalhos a:focus{
-background:#d4af37;
-color:#08121f;
-transform:translateY(-4px);
 }
 
 /* PÁGINAS */
 
 .pagina{
-min-height:70vh;
-padding:95px 8%;
+
+min-height:75vh;
+
+padding:
+90px
+8%;
+
+}
+
+.pagina h1{
+
+font-size:60px;
+
+margin-bottom:28px;
+
 }
 
 .pagina p{
-font-size:20px;
-max-width:900px;
-margin-bottom:22px;
-}
 
-.pagina .destaque{
-font-size:32px;
-font-weight:800;
-line-height:1.4;
+max-width:850px;
+
+font-size:20px;
+
+margin-bottom:22px;
+
 }
 
 .clara{
+
 background:#f7f8fa;
+
 color:#111827;
+
 }
 
 .clara h1{
+
 color:#06284a;
+
 }
 
 .escura{
-background:linear-gradient(135deg,#020817,#06284a);
+
+background:
+linear-gradient(
+135deg,
+#020817,
+#06284a
+);
+
 color:white;
+
 }
 
 .escura h1{
+
 color:#d4af37;
+
 }
 
 .escura p{
+
 color:#f0f0f0;
+
+}
+
+.destaque{
+
+font-size:32px;
+
+font-weight:800;
+
+line-height:1.5;
+
 }
 
 /* BOTÕES */
 
-.botoes{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-margin-top:34px;
-}
-
 .botao{
+
 display:inline-block;
-padding:14px 26px;
+
+margin-top:24px;
+
+padding:
+15px
+28px;
+
 border-radius:40px;
+
 font-weight:800;
-text-align:center;
+
 transition:.3s;
+
 }
 
 .botao:hover{
-transform:translateY(-3px);
+
+transform:
+translateY(-3px);
+
 }
 
 .dourado{
+
 background:#d4af37;
+
 color:#08121f;
+
 }
 
 .dourado:hover{
+
 background:white;
-color:#08121f;
+
 }
 
 .contorno{
-border:2px solid #d4af37;
+
+border:
+2px solid
+#d4af37;
+
 color:white;
+
 }
 
 .contorno:hover{
+
 background:#d4af37;
+
 color:#08121f;
+
 }
 
 .contorno-azul{
-border:2px solid #06284a;
+
+border:
+2px solid
+#06284a;
+
 color:#06284a;
+
 }
 
 .contorno-azul:hover{
+
 background:#06284a;
+
 color:white;
+
 }
 
 /* RODAPÉ */
 
 .rodape{
+
 background:#020817;
+
 color:white;
+
 text-align:center;
-padding:50px 8%;
+
+padding:
+55px
+8%;
+
 }
 
 .nome-rodape{
+
 font-size:32px;
+
 font-weight:900;
+
 color:#d4af37;
+
 margin-bottom:10px;
+
 }
 
 .rodape p{
-margin-bottom:10px;
-color:#d9d9d9;
+
+color:#d7d7d7;
+
 }
 
 .desenvolvido{
-margin-top:22px;
+
+margin-top:25px;
+
 }
 
 .desenvolvido a{
+
 color:#d4af37;
+
 font-weight:800;
+
 }
 
 .desenvolvido a:hover{
+
 text-decoration:underline;
+
 }
 
 .copyright{
-opacity:.7;
+
 margin-top:20px;
+
+opacity:.7;
+
 }
 
 /* RESPONSIVO */
@@ -297,42 +451,53 @@ margin-top:20px;
 @media(max-width:900px){
 
 .menu{
+
 justify-content:center;
+
 text-align:center;
+
 }
 
 .links{
+
 justify-content:center;
+
 }
 
 .hero{
+
 grid-template-columns:1fr;
+
 text-align:center;
+
+gap:40px;
+
 }
 
 .hero-texto{
+
 order:2;
+
 }
 
 .hero-foto{
+
 order:1;
+
 }
 
 .frase{
-margin:0 auto;
-}
 
-.botoes{
-justify-content:center;
+margin:0 auto;
+
 }
 
 .hero-foto img{
-max-width:340px;
-height:470px;
-}
 
-.atalhos{
-grid-template-columns:1fr;
+max-width:340px;
+
+height:470px;
+
 }
 
 }
@@ -340,50 +505,64 @@ grid-template-columns:1fr;
 @media(max-width:700px){
 
 .menu{
-padding:24px 6%;
+
+padding:
+24px
+6%;
+
 }
 
 .hero{
-padding:45px 6% 70px;
+
+padding:
+50px
+6%
+70px;
+
 }
 
-.hero h1,
-.pagina h1{
-font-size:46px;
+.hero h1{
+
+font-size:50px;
+
 }
 
 .cargo{
-font-size:21px;
+
+font-size:22px;
+
 }
 
-.frase,
-.pagina p{
-font-size:16px;
-}
+.frase{
 
-.pagina .destaque{
-font-size:24px;
+font-size:18px;
+
 }
 
 .pagina{
-padding:75px 6%;
+
+padding:
+70px
+6%;
+
 }
 
-.atalhos{
-padding:45px 6%;
+.pagina h1{
+
+font-size:40px;
+
 }
 
-.atalhos a{
-font-size:18px;
-padding:24px;
-}
+.pagina p{
 
-.botao{
-width:100%;
+font-size:17px;
+
 }
 
 .hero-foto img{
+
 height:auto;
+
 }
 
 }
