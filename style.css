@@ -9,30 +9,42 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f6f8;
+font-family:
+Arial,
+Helvetica,
+sans-serif;
+
+background:#f7f8fa;
+
 color:#111827;
-line-height:1.6;
+
+line-height:1.7;
 }
 
+/* TOPO */
+
 .topo{
+
 background:
 linear-gradient(
 135deg,
-#020817,
-#062b52,
-#0b3f75
+#010814,
+#06284a,
+#0d4170
 );
 
 color:white;
 
 padding:
-30px
+25px
 8%
-80px;
+90px;
 }
 
+/* MENU */
+
 .menu{
+
 display:flex;
 
 justify-content:
@@ -41,76 +53,86 @@ space-between;
 align-items:center;
 
 margin-bottom:70px;
+
+flex-wrap:wrap;
 }
 
 .logo{
-font-size:34px;
+
+font-size:36px;
 
 font-weight:900;
 
-color:#d4af37;
-
 letter-spacing:2px;
+
+color:#d4af37;
 }
 
 .links{
+
 display:flex;
 
-gap:26px;
+gap:28px;
 
 flex-wrap:wrap;
 }
 
 .links a{
-color:white;
 
 text-decoration:none;
 
-font-weight:700;
+color:white;
 
-font-size:15px;
+font-weight:700;
 
 transition:.3s;
 }
 
 .links a:hover{
+
 color:#d4af37;
 }
 
+/* BANNER */
+
 .banner{
+
 display:grid;
 
 grid-template-columns:
 1.2fr
-1fr;
+0.8fr;
 
 gap:50px;
 
 align-items:center;
+
+min-height:75vh;
 }
 
 .subtitulo{
+
 color:#d4af37;
 
 font-weight:700;
 
-margin-bottom:16px;
-
 font-size:18px;
+
+margin-bottom:18px;
 }
 
 .texto-banner h1{
-font-size:78px;
+
+font-size:82px;
 
 line-height:1;
 
 margin-bottom:15px;
-
-text-transform:uppercase;
 }
 
 .texto-banner h2{
-font-size:32px;
+
+font-size:30px;
 
 color:#d4af37;
 
@@ -118,105 +140,132 @@ margin-bottom:22px;
 }
 
 .texto-banner p{
+
 font-size:18px;
 
 max-width:700px;
 }
 
+/* FOTO */
+
+.foto-banner{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+}
+
+.foto-banner img{
+
+width:100%;
+
+max-width:430px;
+
+height:620px;
+
+object-fit:cover;
+
+object-position:center;
+
+border-radius:32px;
+
+border:
+4px solid
+#d4af37;
+
+display:block;
+
+box-shadow:
+0 25px 60px
+rgba(0,0,0,.30);
+}
+
+/* BOTÕES */
+
 .botoes{
-margin-top:35px;
 
 display:flex;
 
 gap:15px;
 
+margin-top:35px;
+
 flex-wrap:wrap;
 }
 
+.centro{
+
+justify-content:center;
+}
+
 .botao{
+
 padding:
-16px
+15px
 28px;
 
-border-radius:50px;
-
-text-decoration:none;
+border-radius:40px;
 
 font-weight:800;
+
+text-decoration:none;
 
 transition:.3s;
 }
 
 .dourado{
+
 background:#d4af37;
 
-color:#020817;
+color:#08121f;
 }
 
 .dourado:hover{
+
 background:white;
+
+transform:
+translateY(-3px);
 }
 
 .contorno{
-border:2px solid #d4af37;
+
+border:
+2px solid
+#d4af37;
 
 color:white;
 }
 
 .contorno:hover{
+
 background:#d4af37;
 
-color:#020817;
+color:#08121f;
 }
 
 .contorno-azul{
-border:2px solid #062b52;
 
-color:#062b52;
+border:
+2px solid
+#06284a;
+
+color:#06284a;
 }
 
 .contorno-azul:hover{
-background:#062b52;
+
+background:#06284a;
 
 color:white;
 }
 
-.foto-banner,
-.capa-musica{
-
-min-height:420px;
-
-border-radius:30px;
-
-background:
-linear-gradient(
-135deg,
-white,
-#dfe9f5
-);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-padding:35px;
-
-color:#062b52;
-
-font-size:22px;
-
-font-weight:700;
-
-box-shadow:
-0 25px 50px
-rgba(0,0,0,.25);
-}
+/* SEÇÕES */
 
 .secao{
+
 padding:
 90px
 8%;
@@ -226,27 +275,29 @@ padding:
 
 text-align:center;
 
-font-size:44px;
+font-size:42px;
 
-color:#062b52;
+color:#06284a;
 
 margin-bottom:20px;
 }
 
 .descricao{
 
-max-width:900px;
+max-width:950px;
 
 margin:
 0 auto
-50px;
+35px;
 
 text-align:center;
 
 font-size:18px;
 
-color:#4b5563;
+color:#555;
 }
+
+/* CARDS */
 
 .cards{
 
@@ -258,7 +309,9 @@ repeat(
 1fr
 );
 
-gap:30px;
+gap:28px;
+
+margin-top:45px;
 }
 
 .card{
@@ -267,10 +320,10 @@ background:white;
 
 padding:35px;
 
-border-radius:25px;
+border-radius:30px;
 
 box-shadow:
-0 8px 30px
+0 10px 35px
 rgba(0,0,0,.08);
 
 border-top:
@@ -283,41 +336,45 @@ transition:.3s;
 .card:hover{
 
 transform:
-translateY(-6px);
+translateY(-8px);
 }
 
 .card h3{
 
-color:#062b52;
+font-size:24px;
 
 margin-bottom:14px;
 
-font-size:24px;
+color:#06284a;
 }
 
 .card p{
 
-color:#4b5563;
+color:#555;
 }
+
+/* ÁREA ESCURA */
 
 .escura{
 
 background:
 linear-gradient(
 135deg,
-#020817,
-#062b52
+#010814,
+#06284a
 );
 
 color:white;
 }
 
 .escura h2{
+
 color:#d4af37;
 }
 
 .escura .descricao{
-color:#d8dee7;
+
+color:#f0f0f0;
 }
 
 .escura .card{
@@ -330,86 +387,77 @@ rgba(
 0.06
 );
 
+color:white;
+
 border:
 1px solid
 #d4af37;
-
-backdrop-filter:
-blur(10px);
-
-color:white;
 }
 
 .escura .card h3{
+
 color:#d4af37;
 }
 
 .escura .card p{
-color:#eef2f6;
+
+color:#efefef;
 }
 
-.musica{
+/* CONTATO */
 
-display:grid;
+.contato{
 
-grid-template-columns:
-1fr
-1fr;
-
-gap:40px;
-
-align-items:center;
+background:white;
 }
 
-.centro{
-
-justify-content:center;
-}
+/* RODAPÉ */
 
 .rodape{
 
 background:#020817;
 
-padding:
-60px
-8%;
+color:white;
 
 text-align:center;
 
-color:white;
+padding:
+60px
+8%;
 }
 
 .rodape h2{
 
-font-size:40px;
+font-size:38px;
 
 color:#d4af37;
 
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .rodape p{
 
-margin-bottom:10px;
+color:#d9d9d9;
 
-color:#d5d8dd;
+margin-bottom:10px;
 }
 
 .copyright{
 
 margin-top:30px;
 
-font-size:14px;
-
 opacity:.7;
 }
+
+/* RESPONSIVO */
 
 @media(max-width:900px){
 
 .menu{
+
 flex-direction:column;
 
-gap:20px;
+gap:22px;
 }
 
 .links{
@@ -417,17 +465,18 @@ gap:20px;
 justify-content:center;
 }
 
-.banner,
-.cards,
-.musica{
+.banner{
 
 grid-template-columns:
 1fr;
-}
-
-.texto-banner{
 
 text-align:center;
+}
+
+.cards{
+
+grid-template-columns:
+1fr;
 }
 
 .texto-banner h1{
@@ -437,7 +486,7 @@ font-size:54px;
 
 .texto-banner h2{
 
-font-size:28px;
+font-size:26px;
 }
 
 .botoes{
@@ -445,29 +494,54 @@ font-size:28px;
 justify-content:center;
 }
 
-.secao h2{
+.foto-banner{
 
-font-size:34px;
+order:-1;
+}
+
+.foto-banner img{
+
+max-width:360px;
+
+height:500px;
 }
 }
 
 @media(max-width:600px){
 
-.logo{
+.topo{
 
-font-size:28px;
-}
-
-.texto-banner h1{
-
-font-size:44px;
+padding:
+25px
+6%
+65px;
 }
 
 .secao{
 
 padding:
-70px
+65px
 6%;
+}
+
+.logo{
+
+font-size:30px;
+}
+
+.texto-banner h1{
+
+font-size:42px;
+}
+
+.texto-banner h2{
+
+font-size:22px;
+}
+
+.secao h2{
+
+font-size:32px;
 }
 
 .botao{
@@ -475,5 +549,12 @@ padding:
 width:100%;
 
 text-align:center;
+}
+
+.foto-banner img{
+
+width:100%;
+
+height:auto;
 }
 }
