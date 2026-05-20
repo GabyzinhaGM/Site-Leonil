@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site institucional de Leonil: liderança capixaba, presidente do Sind Educação do Espírito Santo, com trajetória pública, projetos sociais e música gospel.">
   <title>Leonil | Site Institucional</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="home">
 
 <header class="topo">
-  <nav class="menu">
-    <div class="logo">LEONIL</div>
+  <nav class="menu" aria-label="Menu principal">
+    <a href="#home" class="logo">LEONIL</a>
 
     <div class="links">
-      <a href="#sobre">Sobre</a>
       <a href="#links-principais">Links</a>
+      <a href="#politica">Política</a>
+      <a href="#sindicato">Sind Educação</a>
+      <a href="#musica">Música</a>
       <a href="#eventos">Eventos</a>
       <a href="#contato">Contato</a>
     </div>
@@ -23,22 +26,25 @@
 
   <section class="banner">
     <div class="texto-banner">
+      <p class="subtitulo">Fé, trabalho e compromisso com o povo capixaba</p>
+
       <h1>Leonil</h1>
+
       <h2>Presidente do Sind Educação do Espírito Santo</h2>
 
       <p>
-        Liderança capixaba com trajetória pública, atuação em defesa dos trabalhadores
-        da educação, projetos sociais e música gospel.
+        Uma liderança construída com propósito, serviço ao próximo e compromisso
+        com a educação, com a fé em Deus e com as pessoas.
       </p>
 
       <div class="botoes">
-        <a href="#links-principais" class="botao dourado">Acessar links</a>
-        <a href="#sobre" class="botao contorno">Conheça Leonil</a>
+        <a href="#links-principais" class="botao dourado">Conhecer trajetória</a>
+        <a href="#contato" class="botao contorno">Fale com Leonil</a>
       </div>
     </div>
 
     <div class="foto-banner">
-      <img src="foto leonil.jpeg" alt="Foto de Leonil">
+      <img src="foto leonil.jpeg" alt="Retrato de Leonil" loading="lazy">
     </div>
   </section>
 </header>
@@ -46,54 +52,57 @@
 <main>
 
 <section id="links-principais" class="secao">
-  <h2>Links Principais</h2>
+  <p class="tag">Canais principais</p>
+  <h2>Conheça Leonil</h2>
 
   <p class="descricao">
-    Acesse os principais canais para conhecer melhor a trajetória, o trabalho e a música de Leonil.
+    Acesse os principais caminhos para acompanhar sua trajetória pública,
+    atuação sindical, projetos sociais, música e canais oficiais.
   </p>
 
   <div class="cards">
 
-    <a class="card card-link" href="#politica">
-      <h3>Conheça Leonil na Política</h3>
-      <p>
-        Veja sua trajetória pública, mandatos como vereador e atuação na gestão municipal de Vitória.
-      </p>
+    <a href="#politica" class="card card-link">
+      <span class="icone">🏛️</span>
+      <h3>Leonil na Política</h3>
+      <p>Mandatos, atuação pública e compromisso com a cidade de Vitória.</p>
     </a>
 
-    <a class="card card-link" href="https://open.spotify.com/artist/16RWBs33oCkbeavqVfjNKi?si=86U589_rSoS4qHVfoxwV-w" target="_blank">
-      <h3>Ouça Leonil no Spotify</h3>
-      <p>
-        Acompanhe suas músicas gospel e mensagens de fé, esperança e propósito.
-      </p>
+    <a href="#sindicato" class="card card-link">
+      <span class="icone">📚</span>
+      <h3>Sind Educação ES</h3>
+      <p>Atuação em defesa dos trabalhadores da educação do Espírito Santo.</p>
     </a>
 
-    <a class="card card-link" href="https://www.instagram.com/sindeducacaoes?igsh=MXdpaGM0ZmtsZGhkeQ==" target="_blank">
-      <h3>Conheça Leonil no Sind Educação ES</h3>
-      <p>
-        Acompanhe a atuação sindical em defesa dos trabalhadores da educação.
-      </p>
+    <a href="#musica" class="card card-link">
+      <span class="icone">🎵</span>
+      <h3>Ouça Leonil</h3>
+      <p>Música gospel com mensagens de fé, esperança e gratidão a Deus.</p>
+    </a>
+
+    <a href="#eventos" class="card card-link">
+      <span class="icone">🤝</span>
+      <h3>Eventos e Projetos</h3>
+      <p>Ações sociais, eventos comunitários e iniciativas com propósito.</p>
+    </a>
+
+    <a href="#sobre" class="card card-link">
+      <span class="icone">✨</span>
+      <h3>Sobre Leonil</h3>
+      <p>História, fé, liderança e compromisso com o povo capixaba.</p>
+    </a>
+
+    <a href="#contato" class="card card-link">
+      <span class="icone">📲</span>
+      <h3>Fale com Leonil</h3>
+      <p>Entre em contato ou acompanhe os canais oficiais.</p>
     </a>
 
   </div>
 </section>
 
-<section id="sobre" class="secao escura">
-  <h2>Sobre Leonil</h2>
-
-  <p class="descricao">
-    Leonil é presidente do Sind Educação do Espírito Santo e possui uma trajetória
-    marcada pela atuação pública, defesa dos trabalhadores da educação, compromisso
-    social e dedicação ao povo capixaba.
-  </p>
-
-  <p class="descricao">
-    Além da atuação institucional e política, Leonil também desenvolve projetos sociais
-    e, fora da educação, é cantor gospel e servo de Deus.
-  </p>
-</section>
-
-<section id="politica" class="secao">
+<section id="politica" class="secao escura">
+  <p class="tag">Trajetória pública</p>
   <h2>Leonil na Política</h2>
 
   <p class="descricao">
@@ -108,57 +117,49 @@
     de Parque e Jardins.
   </p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Vereador em Vitória</h3>
-      <p>
-        Dois mandatos com atuação voltada ao diálogo, representação e compromisso público.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Gestão Municipal</h3>
-      <p>
-        Atuação como secretário municipal de Transportes, Trânsito e Infraestrutura Urbana.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Compromisso Social</h3>
-      <p>
-        Trabalho voltado para uma sociedade mais justa, humana e com mais oportunidades.
-      </p>
-    </div>
+  <div class="botoes centro">
+    <a href="#home" class="botao dourado">Voltar para home</a>
   </div>
 </section>
 
-<section id="sindicato" class="secao escura">
-  <h2>Sind Educação ES</h2>
+<section id="sindicato" class="secao">
+  <p class="tag">Educação e representação</p>
+  <h2>Leonil no Sind Educação ES</h2>
 
   <p class="descricao">
     Como presidente do Sind Educação do Espírito Santo, Leonil atua pela valorização
-    dos profissionais da educação e fortalecimento da categoria.
+    dos profissionais da educação, pela defesa de direitos e pelo fortalecimento da categoria.
   </p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Valorização</h3>
-      <p>Defesa dos direitos e reconhecimento dos trabalhadores da educação.</p>
-    </div>
+  <div class="botoes centro">
+    <a href="https://www.instagram.com/sindeducacaoes?igsh=MXdpaGM0ZmtsZGhkeQ==" target="_blank" rel="noopener noreferrer" class="botao dourado">
+      Acessar Sind Educação ES
+    </a>
 
-    <div class="card">
-      <h3>Representatividade</h3>
-      <p>Presença ativa nas pautas da categoria e nos desafios da educação.</p>
-    </div>
+    <a href="#home" class="botao contorno-azul">Voltar para home</a>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Educação Forte</h3>
-      <p>Trabalho por uma educação pública mais justa, humana e valorizada.</p>
-    </div>
+<section id="musica" class="secao escura">
+  <p class="tag">Fé em forma de canção</p>
+  <h2>Ouça Leonil</h2>
+
+  <p class="descricao">
+    Além da atuação pública e institucional, Leonil também é cantor gospel.
+    Suas músicas carregam mensagens de fé, esperança, gratidão e amor a Deus.
+  </p>
+
+  <div class="botoes centro">
+    <a href="https://open.spotify.com/artist/16RWBs33oCkbeavqVfjNKi?si=86U589_rSoS4qHVfoxwV-w" target="_blank" rel="noopener noreferrer" class="botao dourado">
+      Ouvir no Spotify
+    </a>
+
+    <a href="#home" class="botao contorno">Voltar para home</a>
   </div>
 </section>
 
 <section id="eventos" class="secao">
+  <p class="tag">Compromisso social</p>
   <h2>Eventos e Projetos Sociais</h2>
 
   <p class="descricao">
@@ -166,7 +167,7 @@
     para famílias e comunidades do Espírito Santo.
   </p>
 
-  <div class="cards">
+  <div class="cards cards-menores">
     <div class="card">
       <h3>Carretão do Dia das Mães</h3>
       <p>Evento com sorteio de brindes, Pix e ações especiais para homenagear as mães.</p>
@@ -178,43 +179,67 @@
     </div>
 
     <div class="card">
-      <h3>Próximas Agendas</h3>
-      <p>Espaço para divulgar próximos eventos, ações e compromissos de Leonil.</p>
+      <h3>Ações Comunitárias</h3>
+      <p>Projetos voltados para cuidado, união, dignidade e oportunidades para todos.</p>
     </div>
+  </div>
+
+  <div class="botoes centro">
+    <a href="#home" class="botao dourado">Voltar para home</a>
   </div>
 </section>
 
-<section id="musica" class="secao escura">
-  <h2>Ouça Leonil</h2>
+<section id="sobre" class="secao escura destaque">
+  <p class="tag">Propósito e liderança</p>
+  <h2>Sobre Leonil</h2>
+
+  <p class="frase-impacto">
+    “Servir a Deus também é servir pessoas com verdade, coragem e compromisso.”
+  </p>
 
   <p class="descricao">
-    Leonil também é cantor gospel. Suas músicas levam mensagens de fé, esperança,
-    gratidão e amor a Deus.
+    Leonil é presidente do Sind Educação do Espírito Santo e possui uma trajetória
+    marcada pela atuação pública, defesa dos trabalhadores da educação, compromisso
+    social e dedicação ao povo capixaba.
+  </p>
+
+  <p class="descricao">
+    Sua caminhada une fé, responsabilidade pública, projetos sociais e música gospel,
+    sempre com o propósito de contribuir com vidas, famílias e comunidades.
   </p>
 
   <div class="botoes centro">
-    <a href="https://open.spotify.com/artist/16RWBs33oCkbeavqVfjNKi?si=86U589_rSoS4qHVfoxwV-w" target="_blank" class="botao dourado">
-      Ouvir no Spotify
-    </a>
-
-    <a href="https://www.instagram.com/leonil.oficial?igsh=OGswcnNiMDA1a3hl" target="_blank" class="botao contorno">
-      Instagram Oficial
-    </a>
+    <a href="#contato" class="botao dourado">Entrar em contato</a>
+    <a href="#home" class="botao contorno">Voltar para home</a>
   </div>
 </section>
 
 <section id="contato" class="secao contato">
-  <h2>Contato e Redes</h2>
+  <p class="tag">Canais oficiais</p>
+  <h2>Fale com Leonil</h2>
 
   <p class="descricao">
-    Fale com Leonil ou acompanhe seus canais oficiais.
+    Escolha uma opção para entrar em contato ou acompanhar os canais oficiais.
   </p>
 
   <div class="botoes centro">
-    <a href="mailto:leonil.vix@gmail.com" class="botao dourado">E-mail</a>
-    <a href="https://wa.me/5527997614078" target="_blank" class="botao dourado">WhatsApp</a>
-    <a href="https://www.instagram.com/leonil.oficial?igsh=OGswcnNiMDA1a3hl" target="_blank" class="botao dourado">Instagram Leonil</a>
-    <a href="https://www.instagram.com/sindeducacaoes?igsh=MXdpaGM0ZmtsZGhkeQ==" target="_blank" class="botao contorno-azul">Instagram Sind Educação ES</a>
+    <a href="mailto:leonil.vix@gmail.com" class="botao dourado">Enviar e-mail</a>
+
+    <a href="https://wa.me/5527997614078" target="_blank" rel="noopener noreferrer" class="botao dourado">
+      Chamar no WhatsApp
+    </a>
+
+    <a href="https://www.instagram.com/leonil.oficial?igsh=OGswcnNiMDA1a3hl" target="_blank" rel="noopener noreferrer" class="botao contorno-azul">
+      Instagram Leonil
+    </a>
+
+    <a href="https://www.instagram.com/sindeducacaoes?igsh=MXdpaGM0ZmtsZGhkeQ==" target="_blank" rel="noopener noreferrer" class="botao contorno-azul">
+      Instagram Sind Educação ES
+    </a>
+  </div>
+
+  <div class="botoes centro">
+    <a href="#home" class="botao contorno-azul">Voltar para home</a>
   </div>
 </section>
 
@@ -222,13 +247,12 @@
 
 <footer class="rodape">
   <h2>Leonil</h2>
-  <p>Educação • Política • Projetos Sociais • Música Gospel</p>
-  <p>E-mail: leonil.vix@gmail.com</p>
-  <p>WhatsApp: (27) 99761-4078</p>
+
+  <p>Presidente do Sind Educação do Espírito Santo</p>
 
   <p class="desenvolvido">
     Desenvolvido por
-    <a href="https://www.linkedin.com/in/gabriela-godoy-228390a3/" target="_blank">
+    <a href="https://www.linkedin.com/in/gabriela-godoy-228390a3/" target="_blank" rel="noopener noreferrer">
       Gabriela Godoy
     </a>
   </p>
